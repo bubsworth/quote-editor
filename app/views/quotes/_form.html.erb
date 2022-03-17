@@ -1,22 +1,10 @@
-<%= form_with(model: quote) do |form| %>
+<%= simple_form_for quote, html: { class: "quote form" } do |f| %>
   <% if quote.errors.any? %>
-    <div style="color: red">
-      <h2><%= pluralize(quote.errors.count, "error") %> prohibited this quote from being saved:</h2>
-
-      <ul>
-        <% quote.errors.each do |error| %>
-          <li><%= error.full_message %></li>
-        <% end %>
-      </ul>
+    <div class="error-message">
+      <%= quote.errors.full_messages.to_sentence.capitalize %>
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :content, style: "display: block" %>
-    <%= form.text_area :content %>
-  </div>
-
-  <div>
-    <%= form.submit %>
-  </div>
+  <%= f.input :content, input_html: { autofocus: true } %>
+  <%= f.submit class: "btn btn--secondary" %>
 <% end %>

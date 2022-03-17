@@ -1,5 +1,12 @@
-<div id="<%= dom_id quote %>">
-  <p>
-    <%= quote.content %>
-  </p>
+<div class="quote">
+  <%= link_to quote.content, quote_path(quote) %>
+  <div class="quote__actions">
+    <%= button_to "Delete",
+                  quote_path(quote),
+                  method: :delete,
+                  class: "btn btn--light" %>
+    <%= link_to "Edit",
+                edit_quote_path(quote),
+                class: "btn btn--light" %>
+  </div>
 </div>
