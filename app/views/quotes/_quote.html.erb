@@ -1,5 +1,5 @@
 <div class="quote">
-  <%= link_to quote.content, quote_path(quote) %>
+  <%= link_to quote.name, quote_path(quote) %>
   <div class="quote__actions">
     <%= button_to "Delete",
                   quote_path(quote),

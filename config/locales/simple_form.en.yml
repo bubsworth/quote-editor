@@ -2,10 +2,10 @@ en:
   simple_form:
     placeholders:
       quote:
-        content: Name of your quote
+        name: Name of your quote
     labels:
       quote:
-        content: Name
+        name: Name
 
   helpers:
     submit:

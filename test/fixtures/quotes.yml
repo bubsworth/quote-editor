@@ -5,10 +5,10 @@
 # below each fixture, per the syntax in the comments below
 #
 first:
-  content: First quote
+  name: First quote
 
 second:
-  content: Second quote
+  name: Second quote
 
 third:
-  content: Third quote
+  name: Third quote
