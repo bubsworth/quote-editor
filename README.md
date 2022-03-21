@@ -6,7 +6,7 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
-
+    ruby "2.7.2"
 * System dependencies
 
 * Configuration
@@ -22,5 +22,3 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
-# quote-editor
-# quote-editor
